@@ -94,11 +94,13 @@ for n in samples:
     err = np.append(err, erri*pii)
 
 fig = plt.figure()
-plt.plot(samples, pi, 'k.-')
+plt.plot(samples, pi, 'k.-', label='Estimate of $\pi\pm1,2\sigma$')
 plt.fill_between(samples, pi-1*err, pi+1*err, color='#000000', alpha=0.1)
 plt.fill_between(samples, pi-2*err, pi+2*err, color='#000000', alpha=0.1)
-plt.axhline(y=np.pi, linewidth=0.5, color='#000000', linestyle='--')
+plt.axhline(y=np.pi, linewidth=0.5, color='#000000', linestyle='--', label=r'$\pi$')
+plt.xticks(list(plt.xticks()[0]) + [np.pi])
 plt.xscale('log')
+plt.legend(loc='best')
 plt.xlabel('Number Of Samples, $n$')
 plt.ylabel(r'Estimated Value Of $\pi\pm2\sigma$ Versus Actual')
 
