@@ -77,7 +77,7 @@ plt.annotate('Maximum', xy=(np.pi/2,1), xytext=(2,0.5),
 lgd = plt.legend(loc='upper right', ncol=1)
 plt.xlabel('x')
 plt.ylabel('f(x)')
-plt.title('Plot Of sin(x) Using Various Styles') 
+plt.title('Plot Of sin(x) With Annotation') 
 
 ################################################################################
 # Plot saving options.
@@ -86,7 +86,7 @@ plt.figure()
 plt.plot(x, y, color='#000000', linestyle='-', label='sin(x)') 
 plt.xlabel('x')
 plt.ylabel('f(x)')
-plt.title('Plot Of sin(x) Using Various Styles') 
+plt.title('Plot Of sin(x) Using Various Output Options') 
 plt.savefig('plot_sin_save_default.png') 
 plt.savefig('plot_sin_save_300_dpi.png', dpi=300) 
 plt.savefig('plot_sin_save_300_dpi_tight.png', dpi=300, bbox_inches='tight') 
