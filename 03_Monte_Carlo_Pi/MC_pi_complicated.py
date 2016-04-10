@@ -81,11 +81,10 @@ xe4, ye4, pie4, relerre4 = calc_pi(1e4)
 xe6, ye6, pie6, relerre6 = calc_pi(1e6)
 
 plte2 = my2dhist(xe2, ye2, title=r'$\pi$ estimated as {:.5f} using {:d} samples'.format(pie2, int(1e2)))
-plte4 = my2dhist(xe4, ye4, title=r'$\pi$ estimated as {:.5f} using {:d} samples'.format(pie4, int(1e4)))
-plte6 = my2dhist(xe6, ye6, title=r'$\pi$ estimated as {:.5f} using {:d} samples'.format(pie6, int(1e6)))
-
 plte2.savefig('plot_complicated_MC_pi_density_1e2_pts.png')
+plte4 = my2dhist(xe4, ye4, title=r'$\pi$ estimated as {:.5f} using {:d} samples'.format(pie4, int(1e4)))
 plte4.savefig('plot_complicated_MC_pi_density_1e4_pts.png')
+plte6 = my2dhist(xe6, ye6, title=r'$\pi$ estimated as {:.5f} using {:d} samples'.format(pie6, int(1e6)))
 plte6.savefig('plot_complicated_MC_pi_density_1e6_pts.png')
 
 ################################################################################
@@ -116,5 +115,5 @@ plt.xlabel('Number Of Samples, $n$')
 plt.ylabel(r'Estimated Value Of $\pi\pm2\sigma$ Versus Actual')
 
 plt.savefig('plot_complicted_MC_pi_convergence.png')
-plt.show()
+#plt.show()
 
