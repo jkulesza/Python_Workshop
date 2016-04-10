@@ -56,9 +56,9 @@ ax0.loglog(E, sig_t)
 ax1.loglog(E, sig_s)
 ax2.loglog(E, sig_a)
 
-ax0.set_xlabel(r'Energy, $E$ (MeV)')
-ax1.set_xlabel(r'Energy, $E$ (MeV)')
-ax2.set_xlabel(r'Energy, $E$ (MeV)')
+ax0.set_xlabel(r'Energy, $E$ (eV)')
+ax1.set_xlabel(r'Energy, $E$ (eV)')
+ax2.set_xlabel(r'Energy, $E$ (eV)')
 
 ax0.set_ylabel(r'$^{56}$Fe $\sigma_t$ (barns)')
 ax1.set_ylabel(r'$^{56}$Fe $\sigma_\gamma$ (barns)')
@@ -88,7 +88,7 @@ ax0.set_yscale('log')
 ax1.set_yscale('log')
 ax2.set_yscale('log')
 
-ax2.set_xlabel(r'Energy, $E$ (MeV)')
+ax2.set_xlabel(r'Energy, $E$ (eV)')
 
 ax0.set_ylabel(r'$^{56}$Fe $\sigma_t$ (barns)')
 ax1.set_ylabel(r'$^{56}$Fe $\sigma_\gamma$ (barns)')
@@ -118,7 +118,7 @@ ax0.set_yscale('log')
 ax1.set_yscale('log') # Redundant
 ax2.set_yscale('log') # Redundant
 
-ax2.set_xlabel(r'Energy, $E$ (MeV)')
+ax2.set_xlabel(r'Energy, $E$ (eV)')
 
 ax0.set_ylabel(r'$^{56}$Fe $\sigma_t$ (barns)')
 ax1.set_ylabel(r'$^{56}$Fe $\sigma_\gamma$ (barns)')
