@@ -19,6 +19,7 @@ y7 = np.sin(x - 7 * np.pi / 4)
 ################################################################################
 plt.figure()
 plt.plot(x, y)
+plt.savefig('plot_most_simple.png') 
 
 ################################################################################
 # Add axis labels.
@@ -29,6 +30,7 @@ plt.plot(x, y)
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.title('Plot Of sin(x)')
+plt.savefig('plot_axis_labels.png') 
 
 ################################################################################
 # Create different plot styles using Mablab styling.
@@ -47,6 +49,7 @@ plt.plot(x, y7, 'g+')
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.title('Plot Of sin(x) Using Various Styles') 
+plt.savefig('plot_plot_styles.png') 
 
 ################################################################################
 # Create different plot styles using explicit styling & HEX color codes.
@@ -63,6 +66,7 @@ plt.plot(x, y6, color='#0000ff', ls='-', lw=0.5, marker='o', ms=3, mfc='#ff0000'
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.title('Plot Of sin(x) Using Various Styles') 
+plt.savefig('plot_plot_style_keywords.png') 
 
 ################################################################################
 # Plot labeling & annotation.
@@ -78,6 +82,7 @@ lgd = plt.legend(loc='upper right', ncol=1)
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.title('Plot Of sin(x) With Annotation') 
+plt.savefig('plot_labels_annotation.png') 
 
 ################################################################################
 # Plot saving options.
