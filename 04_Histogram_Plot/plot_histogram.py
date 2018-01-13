@@ -7,9 +7,7 @@ E, mt103 = np.genfromtxt('janis_irdf-2002_MG_ni-58.csv', delimiter=',', unpack=T
 # Create several histogram plots using "steps."  Note that the display mode
 # 'post' gives the correct appearance (compare with the plot from JANIS).
 plt.figure()
-plt.step(E, mt103, 'r-', where='pre',  label='pre, default')
-plt.step(E, mt103, 'g-', where='post', label='post') 
-plt.step(E, mt103, 'b-', where='mid',  label='mid')
+plt.step(E, mt103, 'b-', where='post', label='post')
 plt.xlabel('E (eV)')
 plt.ylabel('Ni-58 (n,p) Microscopic Cross Section (barns)')
 plt.title('Histogram Plotting Styles')
